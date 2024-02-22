@@ -1,0 +1,74 @@
+<section>
+    <div class="text-center mt-5 pay-tit" >
+        <h2>PAYMENT</h2>
+    </div>
+   
+
+   
+    <div class="pay-modal" *ngIf="canSee">
+        <div class="modal-content text-center"  *ngIf="canVisible" data-aos="fade-down">
+            <h2>PAYMENT SUCCESSFUL
+                <img src="../../assets/7efs.gif" alt="" class="img-fluid" style="width: 10rem;">
+            </h2>
+        </div>
+        <div *ngIf="canLoad" class="modal-load">
+            <img src="../../assets/Spinner-1s-200px.gif" class="img-fluid" alt="">
+        </div>
+
+    </div>
+
+    <div class="container row-container mt-4">
+        <div class="row">
+          <div class="col-md-6 col-lg-6 text-center py-4">
+           
+                <h5>Item Details:</h5>
+            <div class="pay-items" *ngFor="let item of selectedCartItems;  let i = index">
+                
+                <p>{{i+1}}.{{item.name}}</p>
+                <p>X{{item.quantity}}</p>
+                <p>{{item.price| currency:"INR":"symbol"}}</p>
+                
+
+                
+            </div>
+            <p class="pay-total">Total:{{ getTotalPrice() | currency:"INR":"symbol"}}</p>
+          </div>
+          <div class="col-md-6 col-lg-6 text-center py-4">
+            <!-- Content here -->
+            <h5>Card Details:</h5>
+            <div class="card-det mt-2">
+                <form action="" class="" #payForm="ngForm" (ngSubmit)="onSubmit(payForm)">
+                    <div class="form-group">
+                        <input type="text" ngModel #user="ngModel" name="user" placeholder="Card Holder's Name" required autocomplete="off" ><br>
+                        <span *ngIf="user.invalid &&  user.touched"class="alert px-auto">
+                            *Please Enter Your Name
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="num" [minlength]="16" [maxlength]="16" #num="ngModel" ngModel placeholder="Card Number" required autocomplete="off"><br>
+                        <span *ngIf="num.invalid &&  num.touched"class="alert px-auto">
+                            *Please Enter Your Account Number
+                        </span>
+                    </div>
+                    <div class="form-group ">
+                        <input type="text" #date="ngModel" name="date" ngModel placeholder="Exp Date" onfocus="this.type='month'" onblur="this.type='text'" required autocomplete="off"><br>
+                        <span *ngIf="date.invalid &&  date.touched"class="alert px-auto">
+                            *Please Enter the Exp date
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" #cvv="ngModel" name="cvv" ngModel placeholder="cvv" [minlength]="3" [maxlength]="3" required autocomplete="off" class="cvv"><br>
+                        <span *ngIf="cvv.invalid &&  cvv.touched"class="alert px-auto">
+                            *Please Enter CVV 
+                        </span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" (click)="visible()" [disabled]="!payForm.valid">CONFIRM</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+</section>

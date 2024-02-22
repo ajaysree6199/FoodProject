@@ -1,0 +1,50 @@
+<section>
+  <div class="pg5 mb-5 mt-4">
+    <h2 class="text-center mt-5">Book A Table</h2>
+    <div class="row">
+      <div class="col" >
+        <form action=""  #bookForm="ngForm" (ngSubmit)="onSubmit(bookForm)" class="mt-4 mb-5 mx-auto" data-aos="flip-left">
+          <div class="form-group">
+            <input class="" name="name" required #user="ngModel" ngModel autocomplete="off" type="text" placeholder="Name">
+            <span *ngIf="user.invalid &&  user.touched"class="alert px-auto">
+              *Please Enter Your Name
+          </span>
+          </div>
+          <div class="form-group">
+            <input class="" name="phn" required #phn="ngModel" ngModel autocomplete="off" inputmode="numeric" type="Number" placeholder="Phone">
+            <span *ngIf="phn.invalid &&  phn.touched"class="alert px-auto">
+              *Please provide a valid mobile number
+          </span>
+          </div>
+          <div class="form-group">
+            <input class="" name="person" required #person="ngModel" autocomplete="off" ngModel type="Number" placeholder="Persons" >
+            <span *ngIf="person.invalid &&  person.touched"class="alert px-auto">
+              *Please Fill this
+          </span>
+          </div>
+          <div class="form-group">
+            <input class="" name="date" required #date="ngModel" autocomplete="off" ngModel   placeholder="Date" onfocus="this.type='date'" onblur="this.type='text'">
+            <span *ngIf="date.invalid &&  date.touched"class="alert px-auto">
+              *Please Mention the Date
+          </span>
+          </div>
+          <div class="form-group">
+            <input class="" name="time" required #time="ngModel" ngModel type="time" placeholder="Time" >
+            <span *ngIf="time.invalid &&  time.touched"class="alert px-auto">
+              *Please Mention the Time
+          </span>
+          </div>
+          <button class="btn btn-primary" type="submit" [disabled]="!bookForm.valid" (click)="toggleModal()">BOOK</button>
+
+
+        </form>
+
+      </div>
+      <div *ngIf="showModal" class="top-modal">
+        <p>Your Table Has Been Booked Successfully<i class="bi bi-check-circle-fill" ></i></p>
+      </div>
+
+    </div>
+
+  </div>
+</section>

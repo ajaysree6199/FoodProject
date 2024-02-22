@@ -1,0 +1,30 @@
+<section>
+    <div class="login mx-auto">
+        <h2 class="text-center mt-3" data-aos="fade-down">LOGIN</h2>
+        <form action="" #signInForm="ngForm" (ngSubmit)="onSubmit(signInForm)" class="mx-auto mt-3 pb-2" >
+            <div class="form-group my-4" data-aos="fade-right">
+                <input type="text" autocomplete="off" ngModel placeholder="Username" name="username"   #user="ngModel" class="" required id="user">
+                <i class="bi bi-person-circle my-auto mx-3 fs-5"></i>
+                <span *ngIf="user.invalid &&  user.touched"class="alert px-auto">
+                    *Username should not be empty
+                </span>
+                
+            </div>
+           
+            <div class="form-group" data-aos="fade-right">
+                <input [type]="changetype?'password':'text'" minlength="6" autocomplete="off" #pass="ngModel"   ngModel placeholder="Password" name="password" required class="" id="pass">
+               <span (click)="viewpass()" class="" > <i [ngClass]="visible?'bi bi-eye-slash-fill':'bi bi-eye-fill'" class="my-auto mx-3 fs-5"></i></span>
+                <span *ngIf="pass.invalid &&  pass.touched"class="alert px-auto">
+                    *Password must  be 6 characters long
+                </span>
+            </div>
+            <button type="submit" class="btn btn-primary p-1 mt-4" [disabled]="!signInForm.valid">Sign-In</button>
+            <div *ngIf="errorMessage" class="error-message alert px-auto">{{ errorMessage }}</div>
+            <div class="low d-flex mx-2 pt-3">
+                <p class="mx-4"><a href="">Forget Password?</a></p>
+            <p class="mx-4">New User?<a href="" routerLink="/register">Register</a></p>
+            </div>
+        </form>
+    </div>
+</section>
+

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Serif:wght@500&family=Roboto:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Libre+Baskerville&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow: hidden;
+
+}
+
+section{
+
+    background-image: url(../../assets/enjoye.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    width: 21rem;
+    height: 19rem;
+
+}
+
+.sign{
+
+    color: white;
+    /* color: black; */
+    padding-top: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 21rem;
+    height: 26rem;
+    margin-top: 110px;
+    margin-bottom: 70px;
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    
+box-shadow:  6px 6px 73px #8f8f8f,
+             -6px -6px 73px #ffffff;
+
+
+}
+.sign h2{
+    font-family: 'Merriweather', serif;
+}
+form button{
+    width: 260px;
+    margin-left: 30px;
+    border-radius: 50px;
+    font-family: 'Noto Serif', serif;
+}
+form button:hover{
+    background: transparent;
+    border: 1px solid rgb(0, 174, 255);
+}
+input{
+    width: 220px;
+    padding: 4px 5px;
+    margin-left:  34px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #ffffff;
+}
+input::placeholder{
+    color: white;
+
+}
+input:focus{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 0px;
+    
+}
+
+form p{
+    font-size: 13px;
+    font-family: 'Kanit', sans-serif;
+}
+.form-group .ng-touched .ng-invalid{
+    border: 1px solid red;
+}
+.ng-touched .ng-valid{
+    border: 1px solid green;
+}
+.alert{
+    color: red;
+    font-size: 11px;
+    margin-left:  34px;
+}

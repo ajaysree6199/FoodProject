@@ -1,0 +1,62 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}*/
+
+
+
+.c-h5{
+    font-size: 43px;
+    /* color: orange; */
+    font-weight: bold;
+    /* font-family: 'Roboto', sans-serif; */
+
+}
+img{
+    object-fit: cover;
+    height: 100vh;
+}
+button{
+    margin-top: 10px;
+    background-color: rgb(255, 136, 0);
+    margin-left: 15px;
+    padding: 5px 7px;
+}
+button:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+.c-h5 span{
+    color: rgb(255, 136, 0);
+}
+.c-p{
+    font-size: 14px;
+}
+.c-cap{
+    margin-bottom: 160px;
+} 
+img{
+    animation: img 5s linear forwards;
+}
+@keyframes img{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .c-cap{
+        margin-bottom: 170px;
+    }
+    .c-h5{
+        font-size: 33px;
+    }
+    .c-p{
+        font-size: 12px;
+    }
+}

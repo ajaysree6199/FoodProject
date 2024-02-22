@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Serif:wght@500&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Libre+Baskerville&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+section h2{
+    font-family: 'Merriweather', serif;
+}
+section{
+    padding-top: 70px;
+    height: 100vh;
+    background-color: #F8F8FF;
+
+}
+.order-content{
+    padding-left: 30px;
+    border-radius: 20px;
+}
+.order-content button{
+    margin-top: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    font-family: 'Libre Baskerville', serif;
+
+}
+.order-content button:hover{
+    background: transparent;
+    color: black;
+}
+
+
+.order-content h5{
+    margin-top: 30px;
+    /* padding-left: 20px; */
+    margin-bottom: 10px;
+    font-family: 'Noto Serif', serif;
+}
+.order-content h4 span{
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: line-through solid red;
+
+}
+
+.food-description{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Noto Serif', serif;
+
+    
+}
+.order-content p{
+    font-size: 12px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.order-content .rating{
+    margin-top: 5px;
+    padding-left: 7px;
+    color: rgb(236, 26, 26);
+}
+h6{
+    font-family: 'Libre Baskerville', serif;
+
+}
+.order-img img{
+    width: 20rem;
+    filter: drop-shadow( rgba(100, 100, 111, 0.2) 0px 7px 29px 0px);
+    padding: 1rem;
+}
+@media only screen and (max-width: 574px){
+    .order-img img{
+        margin: auto;
+    }
+    .order-content{
+        text-align: center;
+    }
+    
+}
+

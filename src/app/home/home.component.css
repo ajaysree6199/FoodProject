@@ -1,0 +1,336 @@
+ @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Serif:wght@500&family=Roboto:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Libre+Baskerville&display=swap');
+ /* font-family: 'Merriweather', serif; */
+ /* heading */
+ /* font-family: 'Kanit', sans-serif;
+ under heading
+font-family: 'Libre Baskerville', serif;
+p tag */
+
+  /* font-family: 'Noto Serif', serif;
+font-family: 'Roboto', sans-serif; */
+
+
+*{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* background-color: bisque; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    
+}
+.land{
+    height: 100vh;
+}
+section{
+    /* color: hsl(38, 61%, 73%) ; */
+    background-color: #F8F8FF;
+    
+    
+
+}
+
+.pg2-content h1 span{
+    color: rgb(255, 136, 0);
+}
+
+.page1{
+    margin-top: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    
+}
+.page1 span{
+    color: rgb(255, 136, 0);
+}
+.pg1-content h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+.pg1-img{
+    height: 480px;
+    position: relative;
+    width: 480px;
+    /* margin-top: 30px; */
+    padding-top: 50px;
+    filter: drop-shadow( rgba(0, 0, 0, 0.35) 0px 5px 15px);
+    padding-bottom: 10px;
+    padding-left: 40px;
+    /* padding-left: 0px; */
+    /* margin-bottom: 80px; */
+}
+.pg1-img img{
+    max-width: 100%;
+    max-height: 100%;
+    animation: rotimg 50s linear infinite;
+
+}
+@keyframes rotimg{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.pg1-content p{
+    font-size: 13px;
+}
+.pg1-content button{
+    margin-top: 30px;
+    background-color: orange;
+    margin-left: 15px;
+    padding: 5px 7px;
+}
+.pg1-content button:hover{
+    background-color: rgb(255, 255, 255);
+}
+.app-menu{
+    /* height: 550px; */
+    height: 93vh;
+    /* overflow-y: scroll; */
+
+}
+.menu-btn{
+    background-color: #F8F8FF;
+
+}
+.menu-btn button{
+    padding: 8px 10px;
+
+}
+
+
+
+
+/*DELETED ITEMS */
+.page2{
+    /* margin-top: 80px; */
+    overflow: visible;
+}
+.page2 h1{
+    font-family: 'Merriweather', serif;
+}
+.pg2-content p{
+font-size: 14px;
+}
+.cus-card{
+    
+    box-shadow: -3px 9px 17px -13px rgba(0,0,0,0.22),
+                0px 5px 14px 0px rgba(0,0,0,0.18);
+   border: none;
+   /* margin-left: 40px; */
+    padding: 10px;
+    margin-top: 35px;
+    margin-bottom: 90px;
+    transition: 0.3s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+    overflow: visible;
+    width: 11rem;
+}
+
+.cus-card:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.cus-card-title span{
+    background-color: red;
+    backdrop-filter: -3px 9px 23px 6px rgba(0,0,0,0.22),
+    0px 5px 14px 0px rgba(0,0,0,0.18);
+}
+.cus-card-title span:hover{
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+
+
+}
+.cus-card-body img{
+    backdrop-filter: -3px 9px 23px 6px rgba(0,0,0,0.22),
+    0px 5px 14px 0px rgba(0,0,0,0.18);
+}
+.cus-card-price{
+    background-color: green;
+    padding: 4px  10px;
+    font-weight: bold;
+    margin-left: 50px;
+    color: black;
+}
+.cus-card-price:hover{
+    border: 1px solid green;
+    color: green;
+    background-color: white;
+}
+
+.pg3-card img{
+    width: 40px;
+}
+.pg3-card img:hover{
+        animation: service .5s linear;
+
+}
+@keyframes service{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.pg-3 h3{
+    font-family: 'Merriweather', serif;
+}
+.dot img{
+    width: 20px;
+}
+.pg3-card{
+    border: none;
+    background: transparent;
+    
+}
+.pg3-p{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pg-4{
+    /* background-color: orange; */
+    background: url(../../assets/hero-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.pg-4 p{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+}
+.pg-4 h2{
+    font-family: 'Merriweather', serif;
+}
+.pg5{
+    background-position: 800px;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/formimgs/shape-1.png);
+}
+.pg5 form{
+    width: 500px;
+    padding: 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    
+    
+}
+
+.pg5 h2{
+    font-family: 'Merriweather', serif;
+}
+.pg5 form input{
+    width: 25rem;
+    margin: 7px 0;
+    padding: 7px 7px;
+}
+
+.ng-touched .ng-valid{
+    border: 2px solid green;
+}
+.alert{
+    color: red;
+    font-size: 13px;
+}
+.pg5 form button{
+    padding: 5px 7px;
+    
+    margin-top: 5px;
+}
+
+.pg5 form input::placeholder{
+    padding-left: 5px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1199px){
+    .app-menu{
+        height: 93vh;
+    }
+
+}
+@media only screen and (max-width: 800px){
+    .app-menu{
+        height: 134vh;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+    .pg1-content h1{
+        margin-top: 40px;
+    }
+    .cus-card{
+        margin-bottom: 50px;
+        
+    }
+    .abt-content img{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+}
+@media only screen and (max-width: 442px){
+    .app-menu{
+        height: 243vh;
+        padding-left: 15%;
+    }
+}
+@media only screen and (max-width: 390px){
+    .app-menu{
+        padding-left: 12%;
+    }
+}
+@media only screen and (max-width: 350px){
+    .app-menu{
+        padding-left: 9%;
+    }
+}
+@media only screen and (max-width: 574px){
+    .pg5 form{
+        width: 300px;
+    }
+    .pg5 form input{
+        width: 13rem;
+        border: 1px solid black;
+    }
+    .alert{
+        font-size: 9px;
+    }
+    
+}
+
+
+
+/* Modal */
+.top-modal {
+    
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        padding: 30px 20px;
+        width: 400px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        
+      
+      
+  }
+.top-modal i{
+    color: green;
+    padding-left: 7px;
+    font-size: 17px;
+}
+
+  
+
+

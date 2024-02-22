@@ -1,0 +1,22 @@
+    <div class="menu-title text-center">
+      <h1>Our <span>Menu</span></h1>
+      <p>"Indulge in a symphony of flavors with our exclusive Special Menu crafted appetizers."</p>
+    </div>
+    <div class="row container-fluid mx-auto mt-3">
+    <div class="d-flex cus-container mx-5" >
+        <div class="card cus-card mx-4" *ngFor="let card of item" data-aos="zoom-in" >
+            <div class="cus-card-body " >
+                <img [src]="card.img" class="card-img-top my-auto img-fluid"  alt="..." (click)="goToDetail(card.id)">
+            <div class="card-body cus-card-title" >
+              <h5 class="card-title text-center pb-4">{{card.name}}</h5>
+              
+              <a  (click)="goToDetail(card.id)" class="btn btn-success cus-card-price">{{card.price  | currency:"INR"}}</a>
+              <span class=" btn position-absolute top-0 start-100 translate-middle badge  p-2 rounded-pill mt-0 fs-5">
+                <i class="bi bi-cart-plus-fill " (click)="addtoCart(card)"> </i>
+              </span>
+              
+            </div>
+            </div>
+          </div>
+    </div>
+   

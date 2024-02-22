@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+section{
+    padding-bottom: 200px;
+}
+.arrow{
+    margin-top: 75px;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 25px;
+}
+.arrow a{
+    padding: 0 8px;
+    border-radius: 8px;
+    color: black;
+}
+.arrow a:hover{
+    background-color: rgb(197, 189, 189);
+}
+.error-title{
+    height: 25rem;
+    padding-bottom: 50px;
+}
+
+.error-title img{
+    max-height: 100%;
+    animation: error infinite linear 3s;
+}
+
+@keyframes error{
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-10px);    
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}

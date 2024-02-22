@@ -1,0 +1,106 @@
+/* hsl(38, 61%, 73%)     --gold*/
+/* color: hsla(0, 0%, 65%, 1);     --silver */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Serif:wght@500&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Libre+Baskerville&display=swap');
+/* font-family: 'Merriweather', serif; */
+/* heading */
+/* font-family: 'Kanit', sans-serif;
+under heading
+font-family: 'Libre Baskerville', serif;
+p tag */
+
+/* font-family: 'Noto Serif', serif;
+font-family: 'Roboto', sans-serif; */
+ 
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: white;
+}
+section{
+    padding-bottom: 300px;
+    background-image: url(../../assets/hero-slider-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-title{
+    padding-top: 35px;
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+.contact-title p{
+    font-size: 13px;
+    font-family: 'Libre Baskerville', serif;
+}
+.con-form{
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 350px;
+    margin-left: auto;
+}
+.con-form h6{
+    font-size: 21px;
+    font-family: 'Noto Serif', serif;
+}
+.con-form input{
+    padding: 5px 7px;
+    width: 260px;
+    background: transparent;
+    border: 1px solid hsl(38, 61%, 73%);
+
+}
+.con-form input::placeholder{
+    color: rgb(255, 255, 255);
+}
+.con-form input:focus{
+    border: 1px solid hsl(38, 61%, 73%);
+}
+.con-form button{
+    padding: 7px 15px;
+    color: black;
+    background-color: hsl(38, 61%, 73%);
+    border: none;
+    border: 1px solid hsl(38, 61%, 73%);
+}
+.con-det{
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 350px;
+    font-family: 'Noto Serif', serif;
+}
+.con-form button:hover{
+    color: hsl(38, 61%, 73%);
+    background: transparent;
+    border: 1px solid hsl(38, 61%, 73%);
+}
+.con-det h6{
+    padding-top: 21px;
+    font-size: 20px;
+}
+.con-det .con-p{
+    font-size: 19px;
+    padding-left: 20px;
+}
+.con-det .con-t{
+    font-size: 13px;
+    /* font-weight: bold; */
+}
+.cont-icons a{
+    font-size: 25px;
+    margin: 0 8px;
+}
+.cont-icons i{
+    color: hsl(38, 61%, 73%);
+
+}
+.alert{
+    font-size: 12px;
+    color: red;
+}

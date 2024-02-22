@@ -1,0 +1,140 @@
+<!-- <section (click)="checkAccess()">
+
+
+<div class="page1 row container-fluid">
+    <div class="col-lg-6 col-md-6 pg1-content container-fluid text-center my-auto" data-aos="fade-up">
+        <h1>
+            Enjoy Our <br>DElicious <span>Meal</span>
+        </h1>
+        <p>A Symphony of Flavors Your Journey to Culinary  Bliss Starts Now</p>
+        <button class="" (click)="checkAccess()" routerLink="/menu">Our Menu</button>
+        <button class="" (click)="checkAccess()" routerLink="/table">Book Table</button>
+    </div>
+    <div class="col-lg-6 col-md-6 pg1-img mx-auto"  >
+        <img src="../../assets/hero.png" alt="" class=" img-fluid" >
+    </div>
+
+</div>
+</section> -->
+
+
+<!-- Carouel Part -->
+<section (click)="checkAccess()" class="land">
+  <app-error ></app-error>
+</section>
+
+<section class="app-menu" (click)="checkAccess()">
+<app-menu></app-menu>
+</section>
+<div class="menu-btn text-center">
+  <button class="btn btn-success" routerLink="/menu">View Full Menu</button>
+</div>
+<section (click)="checkAccess()" >
+    <div class="pg-3 container-fluid mt-4">
+        <div class="row text-center" data-aos="fade-up">
+            <h3 class="fs-2">Choose Best <span>Services</span></h3>
+            <p class="pg3-p">"Indulge our exquisite, where exceptional meet impeccable hospitality."</p>
+        </div>
+        <div class="row mt-5" data-aos="fade-up">
+            <div class="card pg3-card mx-auto text-center " style="width: 11rem;">
+                <img src="../../assets/Icons/restaurant.png" class="card-img-top  mx-auto"  alt="...">
+                <div class="card-body">
+                  <h5 class="card-title my-0">Proffessional</h5>
+                  <p class="dot"> <img src="../../assets/Icons/dots.png" alt=""> </p>
+                </div>
+              </div>
+              <div class="card pg3-card mx-auto text-center  " style="width: 11rem;">
+                <img src="../../assets/Icons/delivery.png" class="card-img-top mx-auto"  alt="...">
+                <div class="card-body">
+                  <h5 class="card-title my-0">Free Delivery</h5>
+                  <p class="dot"> <img src="../../assets/Icons/dots.png" alt=""> </p>
+                </div>
+              </div>
+              <div class="card pg3-card mx-auto text-center  " style="width: 11rem;">
+                <img src="../../assets/Icons/bottle.png" class="card-img-top  mx-auto"  alt="...">
+                <div class="card-body">
+                  <h5 class="card-title my-0">Bottles</h5>
+                  <p class="dot"> <img src="../../assets/Icons/dots.png" alt=""> </p>
+                </div>
+              </div>
+              <div class="card pg3-card mx-auto text-center  " style="width: 11rem;">
+                <img src="../../assets/Icons/wifi.png" class="card-img-top  mx-auto"  alt="...">
+                <div class="card-body">
+                  <h5 class="card-title my-0">Free Wifi</h5>
+                  <p class="dot"> <img src="../../assets/Icons/dots.png" alt=""> </p>
+                </div>
+              </div>
+              
+        </div>
+
+    </div>
+</section>
+<section (click)="checkAccess()">
+  <div class="pg-4 mt-5">
+    <div class="row mt-3 mb-2" data-aos="fade-up">
+      <h2 class="text-center">About <span>us</span></h2>
+    </div>
+    <div class="row container-fluid abt-content pb-4">
+      <div class="col-lg-6 col-md-6 mt-4 ml-5 mx-auto text-center" data-aos="fade-right">
+          <img src="../../assets/pngegg.png" class="img-fluid" alt="" style="width: 26rem;" >
+      </div>
+      <div class="col-lg-6 col-md-6 container px-5 mx-auto mt-4 text-start" data-aos="fade-left">
+        <p class="py-auto mx-auto">"Welcome to Restoran, where we've redefined the art of dining with a click. Dive into a gastronomic adventure as we bring you an extensive selection of mouthwatering dishes from the finest local restaurants. Our intuitive platform ensures a hassle-free and enjoyable ordering experience, allowing you to explore a diverse range of flavors tailored to satisfy every craving. From comforting classics to exotic delights, we're dedicated to delivering not just meals, but memorable culinary experiences. At Restoran, we believe in the joy of good food, and we're here to make that joy accessible with every order. Welcome to a world where convenience meets gourmet, welcome to Restoran.."</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section (click)="checkAccess()">
+  <div class="pg5 mb-5">
+    <h2 class="text-center mt-5">Book A Table</h2>
+    <div class="row">
+      <div class="col" >
+        <form action=""  #bookForm="ngForm" (ngSubmit)="onSubmit(bookForm)" class="mt-4 mb-5 mx-auto" data-aos="flip-left">
+          <div class="form-group">
+            <input class="" name="name" required #user="ngModel" ngModel autocomplete="off" type="text" placeholder="Name">
+            <span *ngIf="user.invalid &&  user.touched"class="alert px-auto">
+              *Please Enter Your Name
+          </span>
+          </div>
+          <div class="form-group">
+            <input class="" name="phn" required #phn="ngModel" ngModel autocomplete="off" inputmode="numeric" type="Number" placeholder="Phone">
+            <span *ngIf="phn.invalid &&  phn.touched"class="alert px-auto">
+              *Please provide a valid mobile number
+          </span>
+          </div>
+          <div class="form-group">
+            <input class="" name="person" required #person="ngModel" autocomplete="off" ngModel type="Number" placeholder="Persons" >
+            <span *ngIf="person.invalid &&  person.touched"class="alert px-auto">
+              *Please Fill this
+          </span>
+          </div>
+          <div class="form-group">
+            <input class="" name="date" required #date="ngModel" autocomplete="off" ngModel   placeholder="Date" onfocus="this.type='date'" onblur="this.type='text'">
+            <span *ngIf="date.invalid &&  date.touched"class="alert px-auto">
+              *Please Mention the Date
+          </span>
+          </div>
+          <div class="form-group">
+            <input class="" name="time" required #time="ngModel" ngModel type="time" placeholder="Time" >
+            <span *ngIf="time.invalid &&  time.touched"class="alert px-auto">
+              *Please Mention the Time
+          </span>
+          </div>
+          <button class="btn btn-primary" type="submit" [disabled]="!bookForm.valid" (click)="toggleModal()">BOOK</button>
+
+
+        </form>
+
+      </div>
+      <div *ngIf="showModal" class="top-modal">
+        <p>Your Table Has Been Booked Successfully<i class="bi bi-check-circle-fill" ></i></p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<router-outlet></router-outlet>
+
+

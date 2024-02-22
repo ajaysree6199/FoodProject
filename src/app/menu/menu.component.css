@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.menu-title{
+    margin-top: 95px;
+
+}
+.menu-title h1{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+.menu-title span{
+    color: rgb(255, 136, 0);
+}
+.menu-title p{
+    font-size: 14px;
+}
+.cus-container{
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    margin-right: 30px;
+    margin-bottom: 200px;
+
+    /* height: 23rem; */
+}
+
+.cus-card{
+    
+    box-shadow: -3px 9px 17px -13px rgba(0,0,0,0.22),
+                0px 5px 14px 0px rgba(0,0,0,0.18);
+   border: none;
+   margin: 0 40px;
+    padding: 10px;
+
+    margin-top: 35px;
+    margin-bottom: 40px;
+    transition: 0.3s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+    overflow: visible;
+    width: 11rem;
+    height: 17rem;
+}
+.cus-card:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.cus-card-title span{
+    background-color: red;
+    backdrop-filter: -3px 9px 23px 6px rgba(0,0,0,0.22),
+    0px 5px 14px 0px rgba(0,0,0,0.18);
+}
+.cus-card-title span:hover{
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+
+
+}
+.cus-card-body img{
+    backdrop-filter: -3px 9px 23px 6px rgba(0,0,0,0.22),
+    0px 5px 14px 0px rgba(0,0,0,0.18);
+}
+.cus-card-price{
+    /* background-color: green; */
+    padding: 4px  10px;
+    font-weight: bold;
+    margin-left: 35px;
+    color: rgb(255, 251, 251);
+}
+.cus-card-price:hover{
+    border: 1px solid green;
+    color: green;
+    background-color: white;
+}

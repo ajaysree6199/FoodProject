@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Serif:wght@500&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Libre+Baskerville&display=swap');
+/* font-family: 'Merriweather', serif; */
+/* heading */
+/* font-family: 'Kanit', sans-serif;
+under heading
+font-family: 'Libre Baskerville', serif;
+p tag */
+
+/* font-family: 'Noto Serif', serif;
+font-family: 'Roboto', sans-serif; */
+
+
+
+*{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    
+}
+
+section{
+    background-color: #F8F8FF;
+    
+    
+
+}
+
+.pg5{
+    background-position: 800px;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/formimgs/shape-1.png);
+}
+.pg5 form{
+    width: 500px;
+    padding: 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    
+    
+}
+
+.pg5 h2{
+    font-family: 'Merriweather', serif;
+}
+.pg5 form input{
+    width: 25rem;
+    margin: 7px 0;
+    padding: 7px 7px;
+}
+
+.ng-touched .ng-valid{
+    border: 2px solid green;
+}
+.alert{
+    color: red;
+    font-size: 13px;
+}
+.pg5 form button{
+    padding: 5px 7px;
+    margin-top: 5px;
+}
+
+.pg5 form input::placeholder{
+    padding-left: 5px;
+}
+
+
+@media only screen and (max-width: 574px){
+    .pg5 form{
+        width: 300px;
+    }
+    .pg5 form input{
+        width: 13rem;
+        border: 1px solid black;
+    }
+    .alert{
+        font-size: 9px;
+    }
+    
+}
+
+
+
+/* Modal */
+.top-modal {
+    
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 30px 20px;
+    width: 400px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+  
+  
+}
+.top-modal i{
+color: green;
+padding-left: 7px;
+font-size: 17px;
+}

@@ -1,0 +1,27 @@
+<section class="section">
+    <h2 class="text-center pt-4">Place your order</h2>
+    <div class="row mt-5 my-auto" >
+        <div class="col-lg-6 col-md-6 d-flex justify-content-lg-end justify-content-md-end justify-content-sm-center order-img">
+            <img [src]="foodItem.img" class="img-fluid" alt="">
+        </div>
+        <div *ngIf="foodItem" class="col-lg-6 col-md-6 order-content text-lg-start  text-md-start text-sm-center" >
+            <h5 class="fs-3">{{foodItem.name}}</h5>
+            <h4><span>$33</span>{{foodItem.price}}</h4>
+            
+            <p>Time to Cook 40-50 minutes</p>
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+            </div>
+            <button class="btn rounded-pill btn-primary px-4 py-1" (click)="proceedToPay(foodItem)">Buy</button>
+            <button class="mx-3 btn rounded-pill btn-danger px-4 py-1"  (click)="addtoCart(foodItem)">Cart</button>
+            <h6 class="pt-4">Description :</h6>
+            <p class="food-description">{{foodItem.description}}</p>
+        </div>
+    </div>
+   
+
+</section>

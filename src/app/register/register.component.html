@@ -1,0 +1,41 @@
+<section>
+    <div class="sign mx-auto">
+        <h2 class="text-center top-0" data-aos="fade-down">Register</h2>
+        <form action="" class="mx-auto mt-3 pb-2" #signUpForm="ngForm" (ngSubmit)="onSubmit(signUpForm)">
+            <div class="form-group my-3" data-aos="fade-right">
+                <input type="text" placeholder="Username" autocomplete="off" required #user="ngModel" name="username" ngModel class="" id="user">
+                <i class="bi bi-person-circle my-auto mx-3 fs-5"></i>
+                <span *ngIf="user.invalid &&  user.touched"class="alert px-auto">
+                    *Username should not be empty
+                </span>
+            </div>
+            <div class="form-group my-3" data-aos="fade-right">
+                <input type="email" placeholder="Email" autocomplete="off" required #email="ngModel" name="email" email ngModel class="" id="email">
+                <i class="bi bi-envelope-fill my-auto mx-3 fs-5"></i>
+                <span *ngIf="email.invalid && email.touched"class="alert px-auto">
+                    *Please Enter a Valid Email
+                </span>
+            </div>
+            <div class="form-group my-3" data-aos="fade-right">
+                <input type="password" placeholder="Password" minlength="6" required #pass="ngModel" autocomplete="off" name="password" ngModel class="" id="pass">
+                <i class="bi bi-lock-fill my-auto mx-3 fs-5"></i>
+                <span *ngIf="pass.invalid &&  pass.touched"class="alert px-auto">
+                    *Password must contain atleast 6 characters long
+                </span>
+            </div>
+            <div class="form-group my-3" data-aos="fade-right">
+                <input type="password" placeholder=" Confirm Password" required autocomplete="off" #conpass="ngModel" name="conpassword" ngModel class="" id="conpass">
+                <i class="bi bi-key-fill my-auto mx-3 fs-5"></i>
+                <span *ngIf="conpass.touched && conpass.value!=pass.value"class="alert px-auto">
+                    *Password mismatching
+                </span>
+            </div>
+            <button type="submit" class="btn btn-primary p-1 mt-2" [disabled]="!signUpForm.valid">Sign-up</button>
+             <div *ngIf="errorMessage" class="error-message alert px-auto">{{ errorMessage }}</div>
+            <div class="low d-flex pt-2">
+                <!-- <p class="mx-4"><a href="">Forget Password?</a></p> -->
+            <p class="mx-auto">Already have an Account?<a href="">Sign-In</a></p>
+            </div>
+        </form>
+    </div>
+</section>
