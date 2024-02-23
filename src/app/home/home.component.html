@@ -27,7 +27,7 @@
 <app-menu></app-menu>
 </section>
 <div class="menu-btn text-center">
-  <button class="btn btn-success" routerLink="/menu">View Full Menu</button>
+  <button class="btn btn-success" (click)="checkAccess()" routerLink="/menu">View Full Menu</button>
 </div>
 <section (click)="checkAccess()" >
     <div class="pg-3 container-fluid mt-4">

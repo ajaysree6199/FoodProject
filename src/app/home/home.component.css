@@ -90,8 +90,8 @@ section{
     background-color: rgb(255, 255, 255);
 }
 .app-menu{
-    /* height: 550px; */
-    height: 93vh;
+    height: 530px;
+    /* height: 93%; */
     /* overflow-y: scroll; */
 
 }
@@ -285,7 +285,7 @@ font-size: 14px;
 }
 @media only screen and (max-width: 390px){
     .app-menu{
-        padding-left: 12%;
+        padding-left: 9%;
     }
 }
 @media only screen and (max-width: 350px){

@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    position: relative;
 }
 
 section h2{
@@ -83,5 +84,11 @@ h6{
         text-align: center;
     }
     
+}
+
+@media only screen and (max-width: 760px){
+    section{
+        margin-bottom: 300px;
+    }
 }
 

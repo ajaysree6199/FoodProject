@@ -29,9 +29,16 @@ export class MenuComponent {
   }
   addtoCart(card:any){
     this.cartService.addToCart(card)
+    this.security.canAccess();
   }
   goToDetail(foodId: number) {
     this.router.navigate(['/order', foodId]);
+    this.security.canAccess();
+  }
+
+  checkAccess(){
+    this.security.canAccess();
+
   }
 
   

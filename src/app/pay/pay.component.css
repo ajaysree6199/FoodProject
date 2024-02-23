@@ -76,29 +76,7 @@ section  .pay-tit{
 .pay-item{
     background-color: sienna;
 }
-@media only screen and (max-width:764px) {
-    .card-row{
-        display: flex;
-    }
-    .credit{
-        margin: auto;
-    }
-    .c-img{
-        order: 1;
-    }
 
-    .c-det{
-        order: 2;
-    }
-    
-}
-@media only screen and (max-width:396px) {
-    .credit{
-       display: none;
-    }
-    
-    
-}
 
 /* Modal Content */
 
@@ -119,4 +97,18 @@ section  .pay-tit{
     border-radius: 10px;
     width: fit-content;
     transition: .5s ;
+}
+
+@media (max-width: 570px) {
+    .pay-form{
+        width: 100%; 
+        text-align: center;/* Make the column width 100% on small screens */
+    }
+    .row-container{
+        width: 100%;
+    }
+    .modal-content {
+        width: 100%; /* Adjust the width for smaller screens */
+        /* Other styles */
+    }
 }
