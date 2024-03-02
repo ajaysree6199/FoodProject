@@ -6,9 +6,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { FoodService } from '../servicefiles/food.service';
 
 
-
-
-
 @Component({
   selector: 'app-pay',
   templateUrl: './pay.component.html',
@@ -50,12 +47,8 @@ export class PayComponent {
     });
   })
   }
-
-
-
-
+  
   // Modal Content
-
   canVisible:boolean =false;
   canLoad:boolean=false;
   canSee:boolean=false;

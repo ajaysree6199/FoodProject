@@ -18,8 +18,6 @@ export class OrderComponent {
   ngOnInit(){
     const id = +this.route.snapshot.paramMap.get('id')!;
     this.foodItem = this.apiservice.getFoodItem(id);
-
-    
   }
 
   addtoCart(foodItem:any){

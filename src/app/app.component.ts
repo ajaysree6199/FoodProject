@@ -18,18 +18,15 @@ export class AppComponent {
     this.cartservice.getCartItem
     
  }
-
-
 showNavbarLinks = false;
 
-  toggleNavbar() {
+toggleNavbar() {
     this.showNavbarLinks = !this.showNavbarLinks;
   }
 checkAccess(){
   this.security.canAccess();
 
 }
-
 
 logout(){
   this.security.logout();

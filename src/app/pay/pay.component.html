@@ -2,10 +2,7 @@
     <div class="text-center mt-5 pay-tit" >
         <h2>PAYMENT</h2>
     </div>
-   
-
-   
-    <div class="pay-modal" *ngIf="canSee">
+   <div class="pay-modal" *ngIf="canSee">
         <div class="modal-content text-center"  *ngIf="canVisible" data-aos="fade-down">
             <h2>PAYMENT SUCCESSFUL
                 <img src="../../assets/7efs.gif" alt="" class="img-fluid" style="width: 10rem;">
@@ -27,9 +24,6 @@
                 <p>{{i+1}}.{{item.name}}</p>
                 <p>X{{item.quantity}}</p>
                 <p>{{item.price| currency:"INR":"symbol"}}</p>
-                
-
-                
             </div>
             <p class="pay-total">Total:{{ getTotalPrice() | currency:"INR":"symbol"}}</p>
           </div>

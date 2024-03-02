@@ -23,9 +23,6 @@ export class HomeComponent {
 
   }
 
-  
-
-
   onSubmit(bookForm:NgForm){
     console.log(bookForm);
     this.resetForm(bookForm);
